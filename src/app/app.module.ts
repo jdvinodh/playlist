@@ -7,6 +7,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MusicModule } from './component/music-list/music.module';
 import { MaterialModule } from './shared/material/material.module';
+import { NgHttpLoaderModule } from 'ng-http-loader';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -16,6 +17,7 @@ import { MaterialModule } from './shared/material/material.module';
     HttpClientModule,
     MusicModule,
     MaterialModule,
+    NgHttpLoaderModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
