@@ -1,0 +1,21 @@
+.form-control {
+  border-radius: 3px;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  background: #fff;
+}
+
+.form-control {
+  border: 1px solid #1daa9f;
+}
+
+.navbar {
+  flex-wrap: nowrap;
+  .btn {
+    position: relative;
+  }
+}
