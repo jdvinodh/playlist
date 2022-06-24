@@ -4,7 +4,7 @@
   class="dash-row"
   *ngIf="musicList$ | async as musicAsync"
 >
-  <mat-card class="container"
+  <mat-card
     *ngFor="
       let music of musicAsync?.featuredPlaylists?.content;
       let index = index

@@ -1,18 +1,16 @@
-.container {
-  display: flex;
-  flex-direction: column;
-}
+
 .dash-row {
   display: flex;
   flex-wrap: wrap;
   margin: 1rem;
+  cursor: pointer;
 }
-.dash-row + .dash-row {
-  margin: 0rem 1rem;
-}
+
 .dash-row .mat-card {
   flex: 1;
   min-width: 200px;
   min-height: 250px;
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
 }

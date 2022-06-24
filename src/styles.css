@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 .danger {
   color: #ff0000;
@@ -16,8 +16,4 @@ body {
 
 .title {
   cursor: pointer;
-}
-
-.welcome-text {
-  font-size: smaller;
 }
