@@ -1,10 +1,12 @@
-import { HttpClient, HttpHandler } from '@angular/common/http';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MusicListService } from 'src/app/service/music.service';
+import { HttpClient, HttpHandler } from "@angular/common/http";
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { NgHttpLoaderModule } from "ng-http-loader";
+import { MusicListService } from "src/app/service/music.service";
+import { MaterialModule } from "src/app/shared/material/material.module";
 
-import { MusicComponent } from './music.component';
+import { MusicComponent } from "./music.component";
 
-describe('MusicComponent', () => {
+describe("MusicComponent", () => {
   let component: MusicComponent;
   let fixture: ComponentFixture<MusicComponent>;
 
@@ -12,6 +14,7 @@ describe('MusicComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [MusicComponent],
       providers: [HttpClient, MusicListService, HttpHandler],
+      imports: [MaterialModule, NgHttpLoaderModule],
     }).compileComponents();
   });
 
@@ -21,7 +24,7 @@ describe('MusicComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
     component.ngOnInit();
   });
