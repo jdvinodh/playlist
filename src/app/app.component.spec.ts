@@ -21,6 +21,6 @@ describe('AppComponent', () => {
   it(`should have as title 'add-to-cart'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('add-to-cart');
+    expect(app.title).toEqual('playlist');
   });
 });

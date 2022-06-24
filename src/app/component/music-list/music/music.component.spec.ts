@@ -23,5 +23,6 @@ describe('MusicComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+    component.ngOnInit();
   });
 });
