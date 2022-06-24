@@ -1,16 +1,18 @@
-.card-container {
-  margin: 20px auto;
-  width: 100%;
-  text-align: center;
+.container {
+  display: flex;
+  flex-direction: column;
 }
-
-.mat-typography {
-  background-color: #000000;
+.dash-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
 }
-
-.mat-toolbar {
-  background-color: #000000de;
-  span {
-    color: #ffffff;
-  }
+.dash-row + .dash-row {
+  margin: 0rem 1rem;
+}
+.dash-row .mat-card {
+  flex: 1;
+  min-width: 200px;
+  min-height: 250px;
+  margin: 1rem;
 }

@@ -1,9 +1,5 @@
-<header class="">
-  <div class="navbar container navbar-dark">
-    <div class="logo">
-      <a routerLink="/music"
-        ><img src="../../../assets/logo.png" height="100" alt="logo"
-      /></a>
-    </div>
-  </div>
-</header>
+<mat-toolbar color="primary">
+  <span class="title" routerLink="/">Sound Radio</span>
+  <span class="spacer"></span>
+  <span class="welcome-text">Hello {{ user }}</span>
+</mat-toolbar>
