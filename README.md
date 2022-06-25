@@ -7,6 +7,7 @@
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Setup](#setup)
+* [Screenshots](#screenshots)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Contact](#contact)
@@ -49,8 +50,13 @@ $ ng serve
 $ ng test --code-coverage
 ```
 5. Inorder to see the code coverage
-- Go to {{project_folder}}\playlist\coverage\playlist
-- Open index.html to view the code coverage 
+    - Go to {{project_folder}}\playlist\coverage\playlist
+    - Open index.html to view the code coverage 
+
+
+## Screenshots
+![Code Coverage screenshot](./screenshots/code-coverage.PNG)
+![Application Screenshot](./screenshots/application.PNG)
 
 
 ## Project Status
@@ -58,7 +64,7 @@ Project is: Complete
 
 
 ## Room for Improvement
-- Using Ngrx
+Using Ngrx
 
 
 ## Contact
