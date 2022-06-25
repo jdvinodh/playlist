@@ -4,6 +4,7 @@ import {
   HttpClientTestingModule,
   HttpTestingController,
 } from '@angular/common/http/testing';
+import { ApiUrls } from './api-factory/api-urls';
 
 describe('MusicListService', () => {
   let httpTestingController: HttpTestingController;
@@ -14,8 +15,8 @@ describe('MusicListService', () => {
       imports: [HttpClientTestingModule],
     });
 
-    httpTestingController = TestBed.get(HttpTestingController);
-    service = TestBed.get(MusicListService);
+    httpTestingController = TestBed.inject(HttpTestingController);
+    service = TestBed.inject(MusicListService);
   });
 
   it('should be created', () => {
@@ -24,10 +25,7 @@ describe('MusicListService', () => {
 
   it('getData should use GET to retrieve data', () => {
     service.getMusicList().subscribe();
-    const url =
-      'https://portal.organicfruitapps.com/programming-guides/v2/us_en-us/featured-playlists.json';
-    const testRequest = httpTestingController.expectOne(url);
-
+    const testRequest = httpTestingController.expectOne(ApiUrls.GET_MUSIC_LIST);
     expect(testRequest.request.method).toEqual('GET');
   });
 });

@@ -6,7 +6,7 @@ import { MusicListService } from 'src/app/service/music.service';
 @Component({
   selector: 'app-music',
   templateUrl: './music.component.html',
-  styleUrls: ['./music.component.scss'],
+  styleUrls: ['./music.component.css'],
 })
 export class MusicComponent implements OnInit {
   musicList$?: Observable<MusicList>;
