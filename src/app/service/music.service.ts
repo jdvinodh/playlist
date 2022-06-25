@@ -18,14 +18,8 @@ export class MusicListService {
 
   handleError(err: HttpErrorResponse) {
     let errorMessage = '';
-    if (err.error instanceof ErrorEvent) {
-      // if error is client-side error
-      errorMessage = `Error: ${err.message}`;
-    } else {
-      // if error is server-side error
-      errorMessage = `Error Code: ${err.status}\nMessage: ${err.message}`;
-    }
-    return throwError(errorMessage);
+    errorMessage = `Error Code: ${err.status}\nMessage: ${err.message}`;
 
-    }
+    return throwError(() => new Error(errorMessage));
+  }
 }
