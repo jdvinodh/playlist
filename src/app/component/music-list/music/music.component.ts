@@ -17,9 +17,10 @@ export class MusicComponent implements OnInit {
     this.getMusicPlaylist();
   }
 
+  // get playlist from api
   getMusicPlaylist() {
     this.musicList$ = this.musicService.getMusicList().pipe(
-      catchError((err) => {
+      catchError(err => {
         this.errorMsg = err;
         return of();
       })
