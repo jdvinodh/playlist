@@ -1,89 +1,65 @@
 # Project Name
-> Outline a brief description of your project.
-> Live demo [_here_](https://new-playlist-app.web.app/music). <!-- If you have the project hosted somewhere, include the link here. -->
+> Playlist App.
+> Live demo [_here_](https://new-playlist-app.web.app/music).
+
 
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-<!-- * [License](#license) -->
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- A sample project created to display the playlists
+- Linting and prettier are used to format the code
+- Lazy loading of module is used for performance
+- 100% code coverage using karma
+- Have used async pipes inorder to avoid the memory leaks
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
-
-
-## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
-
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+- Angular 14
+- HTML
+- CSS
+- Karma
+- Angular Material
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+1. clone the [repository](https://github.com/jdvinodh/playlist.git) to your local machine:
+```bash
+$ git clone https://github.com/jdvinodh/playlist.git
+```
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+2. Run `npm install` inside the downloaded/cloned folder:
+```bash
+$ npm install
+```
 
+3. Start the dev server by running the command below. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+$ ng serve
+```
 
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
+4. Start the karma by running the command below. Navigate to `http://localhost:9876/`. The app will automatically reload if you change any of the source files.
+```bash
+$ ng test --code-coverage
+```
+5. Inorder to see the code coverage
+- Go to {{project_folder}}\playlist\coverage\playlist
+- Open index.html to view the code coverage 
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: Complete
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
-To do:
-- Feature to be added 1
-- Feature to be added 2
-
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://new-playlist-app.web.app/music).
-- Many thanks to...
+- Using Ngrx
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Created by Vinodh JD
