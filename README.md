@@ -15,7 +15,7 @@
 
 ## General Information
 - A sample project created to display the playlists
-- Linting and prettier are used to format the code
+- Linting and Prettier are used to format the code
 - Lazy loading of module is used for performance
 - 100% code coverage using karma
 - Have used async pipes inorder to avoid the memory leaks
