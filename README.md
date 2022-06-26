@@ -8,7 +8,6 @@
 * [Technologies Used](#technologies-used)
 * [Setup](#setup)
 * [Screenshots](#screenshots)
-* [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Contact](#contact)
 
@@ -16,9 +15,9 @@
 ## General Information
 - A sample project created to display the playlists
 - Linting and Prettier are used to format the code
-- Lazy loading of module is used for performance
-- 100% code coverage using karma
-- Have used async pipes inorder to avoid the memory leaks
+- Lazy loading of module implemented for performance
+- 100% code coverage using Karma
+- Have used Async pipe to avoid memory leaks
 
 
 ## Technologies Used
@@ -35,7 +34,7 @@
 $ git clone https://github.com/jdvinodh/playlist.git
 ```
 
-2. Run `npm install` inside the downloaded/cloned folder:
+2. Run `npm install` inside the cloned folder:
 ```bash
 $ npm install
 ```
@@ -45,11 +44,11 @@ $ npm install
 $ ng serve
 ```
 
-4. Start the karma by running the command below. Navigate to `http://localhost:9876/`. The app will automatically reload if you change any of the source files.
+4. Start Karma by running the command below. Navigate to `http://localhost:9876/`. The app will automatically reload if you change any of the source files.
 ```bash
 $ ng test --code-coverage
 ```
-5. Inorder to see the code coverage
+5. Viewing the Code coverage
     - Go to {{project_folder}}\playlist\coverage\playlist
     - Open index.html to view the code coverage 
 
@@ -59,13 +58,9 @@ $ ng test --code-coverage
 ![Application Screenshot](./screenshots/application.PNG)
 
 
-## Project Status
-Project is: Complete
-
-
 ## Room for Improvement
 Using Ngrx
 
 
 ## Contact
-Created by Vinodh JD
+Feel free to contact me at jdvinodh@gmail.com
