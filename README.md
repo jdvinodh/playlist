@@ -59,7 +59,7 @@ $ ng test --code-coverage
 
 
 ## Room for Improvement
-Using Ngrx
+Ngrx for state management
 
 
 ## Contact
