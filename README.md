@@ -29,7 +29,7 @@
 
 
 ## Setup
-1. clone the [repository](https://github.com/jdvinodh/playlist.git) to your local machine:
+1. Clone the [repository](https://github.com/jdvinodh/playlist.git) to your local machine:
 ```bash
 $ git clone https://github.com/jdvinodh/playlist.git
 ```
