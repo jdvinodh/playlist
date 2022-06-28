@@ -2,6 +2,7 @@ import { HttpClient, HttpHandler } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NgHttpLoaderModule } from 'ng-http-loader';
 import { MusicListService } from 'src/app/service/music.service';
+import { ErrorComponent } from 'src/app/shared/component/error/error.component';
 import { MaterialModule } from 'src/app/shared/material/material.module';
 
 import { MusicComponent } from './music.component';
@@ -12,7 +13,7 @@ describe('MusicComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MusicComponent],
+      declarations: [MusicComponent, ErrorComponent],
       providers: [HttpClient, MusicListService, HttpHandler],
       imports: [MaterialModule, NgHttpLoaderModule],
     }).compileComponents();
